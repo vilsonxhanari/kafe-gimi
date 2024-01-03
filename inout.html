@@ -9,107 +9,77 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="js.js"></script>
-    <title>In & Out</title>
+    <title>Document</title>
 </head>
 
 <body>
 
-    <main class="bg-[url('img/coffe.jpg')] h-screen bg-no-repeat">
-        <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
-        <!-- Main navigation container -->
-        <nav class="bg-red-700 bg-opacity-50">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-                    <span
-                        class="text-white self-center text-2xl font-semibold whitespace-nowrap md:text-white sm:text-white">Kafe
-                        Gimi</span>
-                </a>
-                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    <button type="button"
-                        class="mx-2text-white bg-blue-700 hover:bg-blue-800 rounded-br-2xl rounded-tl-2xl focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>Cart</button>
-                    <button type="button"
-                        class="mx-2 text-white bg-blue-700 hover:bg-blue-800 rounded-br-2xl rounded-tl-2xl focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><i
-                            <i class="fa-solid fa-user" style="color: #ffffff;"></i>Members</button>
-                    <button data-collapse-toggle="navbar-cta" type="button"
-                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-red-500 rounded-br-2xl rounded-tl-2xl md:hidden hover:bg-white hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-red-200 dark:text-red-400 dark:hover:bg-black dark:focus:ring-gray-600"
-                        aria-controls="navbar-cta" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 17 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 1h15M1 7h15M1 13h15" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-                    <ul
-                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100  rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:border-gray-700">
 
-                        <li class="py-2 px-3 hover:bg-black hover:text-white rounded-br-2xl rounded-tl-2xl">
-                            <a href="index.html"
-                                class="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md:dark:hover:text-white-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
-                        </li>
-                        <li class="py-2 px-3 md:bg-black md:text-white rounded-br-2xl rounded-tl-2xl">
-                            <a href="inout.html"
-                                class="block py-2 px-3 md:p-0 text-white rounded md:bg-transparent md:text-white-700 md:dark:text-white-500"
-                                >In & Out</a>
-                        </li>
-                        <li class="py-2 px-3 hover:bg-black hover:text-white rounded-br-2xl rounded-tl-2xl">
-                            <a href="#"
-                                class="block py-2 px-3 md:p-0 text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md:dark:hover:text-white-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">A</a>
-                        </li>
-                        <li class="py-2 px-3 hover:bg-black hover:text-white">
-                            <a href="#"
-                                class="block py-2 px-3 md:p-0 text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md:dark:hover:text-white-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+  <main class="bg-[url('img/coffe-gimi.jpg')] h-screen bg-no-repeat">
+    <nav class="bg-red-700 bg-opacity-50">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+            <span class="self-center text-white text-2xl font-semibold whitespace-nowrap dark:text-white">Coffee Shop & Company</span>
+        </a>
+        <div class="flex md:order-2">
+          <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-slate-950 hover:bg-black rounded-tl-2xl rounded-br-2xl dark:hover:bg-black rounded-tl-2xl rounded-br-2xl focus:outline-none  rounded-lg text-sm p-2.5 me-1">
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+          <div class="relative hidden md:block">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <svg class="w-4 h-4 text-gray-500 dark:text-slate-950" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+              </svg>
+              <span class="sr-only">Search icon</span>
             </div>
-        </nav>
-
-
-        <p
-            class="justify-stretch p-7 text-center text-white bg-red-800 bg-opacity-50 m-24 rounded-br-2xl rounded-tl-2xl ring-2 ring-orange-900">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt sit nobis facilis. Ea, quisquam.
-            Recusandae molestiae laudantium assumenda sed doloremque quasi veritatis aut sapiente laborum! Porro ullam
-            itaque molestias pariatur!
-        </p>
-        <div class="mt-7 flex justify-center">
-            <a href=""
-                class="inline-block rounded-br-2xl rounded-tl-2xl bg-red-950 px-5 py-4 px-5 text-white text-base font-semibold leading-7 ring-orange-900">Order
-                from Home</a>
+            <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-white border border-gray-300 rounded-lg bg-gray-50  focus:border-blue-500 dark:bg-black rounded-tl-2xl rounded-br-2xl dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+          </div>
+          <button data-collapse-toggle="navbar-search" type="button" class="hover:bg-red-950 rounded-tl-2xl rounded-br-2xl inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-orange-500 rounded-lg md:hidden hover:bg-black rounded-tl-2xl rounded-br-2xl focus:outline-none dark:text-slate-950 dark:hover:bg-black rounded-tl-2xl rounded-br-2xl " aria-controls="navbar-search" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
         </div>
-        <div class="container mx-auto bg-red-950 bg-opacity-90 py-3 px-2 mt-5">
-
-            <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 ">
-                <div class="bg-orange-900 mx-2 my-2">
-                    <h1 class="py-3 px-4 text-white font-medium text-lg md:text-base sm:text-sm ">Bar Kafe Gimi</h1>
-                </div>
-                <div class="bg-orange-900 mx-2 my-2">
-                    <h1 class="py-3 px-4 text-white font-medium text-lg md:text-base sm:text-sm ">Kreperi Kafe Gimi</h1>
-                </div>
-                <div class="bg-orange-900 mx-2 my-2">
-                    <h1 class="py-3 px-4 text-white font-medium text-lg md:text-base sm:text-sm ">Kafe e bluar Kafe Gimi
-                    </h1>
-                </div>
-                <div class="col-span-3">
-                    <div class="bg-orange-900 mx-2 my-2">
-                        <h1 class="py-3 px-4 text-white font-medium text-lg md:text-base sm:text-sm ">Bar Kafe Gimi</h1>
-                    </div>
-                </div>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+            <div class="relative mt-3 md:hidden">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-500 dark:text-slate-950" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+              </div>
+              <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-white border border-gray-300 rounded-lg bg-gray-50 focus:border-blue-500 dark:bg-black rounded-tl-2xl rounded-br-2xl dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
             </div>
-            <!----CONTENT grid -->
-            <section class="container my-20 mx-auto bg-orange-900">
-                <div class="mb-20 text-white p-5">
-                    <h2 class="text-2xl text-center">Shtepia e Kafe Gimi</h2>
-                    
-                </div>
-            </section>
+            <ul class="flex flex-col font-medium p-4 md:p-0 mt-4  rounded-lg  md:space-x-2 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li class="py-2 px-3 lg:bg-black md:bg-black text-white  lg:text-white rounded-br-2xl rounded-tl-2xl">
+                <a href="#" class="block py-2 px-3 md:p-0 text-white bg-black rounded md:bg-black  md:text-white md:dark:text-white rounded-br-2xl rounded-tl-2xl" aria-current="page">Home</a>
+              </li>
+              <li class="py-2 px-3 lg:hover:bg-black md:hover:bg-black text-white  rounded-br-2xl rounded-tl-2xl">
+                <a href="#" class="block py-2 px-3 md:p-0 text-white rounded hover:bg-black rounded-tl-2xl rounded-br-2xl md:hover:bg-transparent md:hover:text-white md:dark:hover:text-white dark:text-white dark:hover:bg-black rounded-tl-2xl rounded-br-2xl dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+              </li>
+              <li class="py-2 px-3 lg:hover:bg-black md:hover:bg-black text-white  rounded-br-2xl rounded-tl-2xl">
+                <a href="#" class="block py-2 px-3 md:p-0 text-white rounded hover:bg-black rounded-tl-2xl rounded-br-2xl md:hover:bg-transparent md:hover:text-white md:dark:hover:text-white dark:text-white dark:hover:bg-black rounded-tl-2xl rounded-br-2xl dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+              </li>
+              <li class="py-2 px-3 lg:hover:bg-black md:hover:bg-black text-white  rounded-br-2xl rounded-tl-2xl">
+                <a href="#" class="block py-2 px-3 md:p-0 text-white rounded hover:bg-black rounded-tl-2xl rounded-br-2xl md:hover:bg-transparent md:hover:text-white md:dark:hover:text-white dark:text-white dark:hover:bg-black rounded-tl-2xl rounded-br-2xl dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        </div>
-    </main>
+      </nav>
+      
+        <h1 class="mt-6 mx-2 mb-5 text-4xl text-dark font-medium tracking-tight text-white sm:text-center bg-clip-text">Miresevini tek
+            Shtepia e Kafe Gimi
+        </h1>
+  <div class=" px-5 text-gray-950">
+    
+<p class=" p-4 mb-3 text-white  text-center">A tradition that connects..</p>
+
+  </div>
 </body>
 
 </html>
