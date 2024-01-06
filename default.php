@@ -134,7 +134,7 @@ function __construct ($name,$surname,$city,$age){
     return $this->city;
     }
 }
-    $vilson = new Person("J21231004W","Vilson", "Xhanari","25","Tirane");
+    $vilson = new Person("M13324002D","Vilson", "Xhanari","25","Tirane");
     echo $vilson->get_id();
     echo "<br>";
     echo $vilson->get_name();
@@ -143,7 +143,7 @@ function __construct ($name,$surname,$city,$age){
     echo "<br>";
     echo $vilson->get_age();
     echo "<br>";
-    echo $vilson->get_city();
+    echo $vilson->get_city(); 
 
 class Punonjes extends Person{
     $vilson=new Punonjes();
