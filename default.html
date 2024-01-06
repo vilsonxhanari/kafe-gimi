@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="js.js"></script>
     <title>Coffe & Company</title>
+    <style>
+        .rounded-4xl{
+            border-top-left-radius:3.5rem;
+            border-bottom-right-radius:3.5rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -68,9 +74,9 @@
       
 
 
-<div id="indicators-carousel" class="relative w-full h-full" data-carousel="static">
+<div id="indicators-carousel" class="relative w-100 h-full" data-carousel="static">
     <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+    <div class="relative h-96 overflow-hidden rounded-lg md:h-96">
          <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="img/carousel-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
@@ -118,7 +124,19 @@
         </span>
     </button>
 </div>
-
+<div class="bg-red-700">
+    <h3 class="lg:p-4 text-2xl text-white text-center">
+        Who We Are ?
+    </h3>
+</div>
+<div class="lg:max-w-screen-2xl justify-center items-center grid grid-cols-3 gap-4 mx-auto justify-center mb-28">
+    <div><img src="img/k-g1.png" class="px-5 py-5 mx-5 my-5 w-96 h-auto ring-white ring-1 rounded-4xl flex justify-center items-center" alt=""><br><a class="lg:justify-center my-5 mx-4 px-32 py-5 items-center font-medium text-base ring-1 ring-red-100 text-red-100 rounded-br-2xl rounded-tl-2xl hover:bg-red-100 hover:text-red-700">Bar - Kafe Gimi 1</a></div>
+    <div><img src="img/k-g2.png" class="px-5 py-5 mx-5 my-5 w-96 h-auto ring-white ring-1 rounded-4xl flex justify-center items-center" alt=""><br><a class="lg:justify-center my-5 mx-5 px-28 py-5 items-center font-medium text-base ring-1 ring-red-100 text-red-100 rounded-br-2xl rounded-tl-2xl hover:bg-red-100 hover:text-red-700">Kreperi - Kafe Gimi 2</a></div>
+    <div><img src="img/store.png" class="px-5 py-5 mx-5 my-5 w-96 h-auto ring-white ring-1 rounded-4xl flex justify-center items-center" alt=""><br><a class="lg:justify-center my-5 mx-4 px-36 py-5 items-center font-medium text-base ring-1 ring-red-100 text-red-100 rounded-br-2xl rounded-tl-2xl hover:bg-red-100 hover:text-red-700">Kafe Gimi Store </a></div>
+</div>
+<div class="bg-red-700">
+    <p class="lg:p-2 text-center text-white">Be A member of Our House of Caffe <a href="k-vip.html" class="bg-black text-white rounded-br-xl rounded-tl-xl hover:bg-white hover:text-black">Here ! </a>|  Already Login: <a href="k-vip.html" class="bg-black text-white rounded-br-xl rounded-tl-xl hover:bg-white hover:text-black">Here ! </a></p>
+</div>
 </main>
 
 <footer class="bg-[url('img/coffe-gimi.jpg')]">
