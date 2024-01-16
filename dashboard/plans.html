@@ -15,16 +15,14 @@
 <body>
 
     <main class="bg-[url('../img/coffe-gimi.jpg')] bg-cover">
-        <nav class="bg-black bg-opacity-50 p-1">
+        <nav class="lg:max-w-screen-2xl bg-black bg-opacity-50 p-1">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-1">
-                <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <span class=" self-center text-2xl text-sm  text-white dark:text-white hover:underline">Reservations</span>
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span class=" self-center text-xl text-sm  text-white dark:text-white hover:underline">Reservations</span>
                 </a>
-                <div class="flex items-center space-x-6 rtl:space-x-reverse max-x-screen-xl">
-                    <a href="dashboard/plans.html" class="text-sm  text-white dark:text-white hover:underline">Sign Up</a>
-                    <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class=" text-white hover:text-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm text-center  type="button">
-                        Login
-                    </button>
+                <div class="flex items-center space-x-6 rtl:space-x-reverse">
+                    <a href="#" class="text-sm  text-white dark:text-white hover:underline">VIP-KafeGimi</a>
+                    <a href="../k-vip.html" class="text-lime-400 dark:text-lime-400 hover:underline">Login</a>
                 </div>
             </div>
         </nav>
@@ -34,12 +32,12 @@
                 <img src="../img/kafe.png" class="h-10 rounded-br-2xl rounded-tl-2xl"   alt="kafe" />
                 <span class="lg:self-center text-white text-xl font-semibold whitespace-nowrap dark:text-white md:text-base"> Coffee Shop & Company</span>
             </a>
-            <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 text-sm text-white rounded-br-2xl rounded-tl-2xl sm:hidden hover:bg-white hover:text-black focus:outline-none">
-                <span class="sr-only">Open sidebar</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                   <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
-                </svg>
-             </button>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul
             class="flex flex-col font-medium p-4 md:p-0 mt-4  rounded-lg  md:space-x-2 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
@@ -96,69 +94,16 @@
 
                 <!-- List -->
                   <div class="flex justify-center items-center">
- <ul role="list" class="mb-8 space-y-4 text-left">
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>3 Hot Drinks 10% discount</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>3 Cold Drinks 10% discount</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>3 Crepper  10% discount</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                    <!-- Icon -->
-                    <svg class="flex-shrink-0  w-4 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                      </svg>
-                    <span class="text-gray-500"><del>6 Hot Drinks 10% discount </del> </span><span><a href="familly.html">Upgrade</a></span>
-                </li>
-                <li class="flex items-center space-x-3">
-                    <!-- Icon -->
-                    <svg class="flex-shrink-0  w-4 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                      </svg>
-                    <span class="text-gray-500"><del>6 Hot Drinks 10% discount </del> </span><span><a href="familly.html">Upgrade</a></span>
-                </li>
-                <li class="flex items-center space-x-3">
-                    <!-- Icon -->
-                    <svg class="flex-shrink-0  w-4 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                      </svg>
-                    <span class="text-gray-500"><del>6  Hot Drinks 10% discount </del> </span><span><a href="familly.html">Upgrade</a></span>
-                </li>
-                <li class="flex items-center space-x-3">
-                    <!-- Icon -->
-                    <svg class="flex-shrink-0  w-4 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                      </svg>
-                    <span class="text-gray-500"><del>All Hot Drinks 10% discount </del> </span><span><a href="familly.html">Upgrade</a></span>
-                </li>
-                <li class="flex items-center space-x-3">
-                    <!-- Icon -->
-                    <svg class="flex-shrink-0  w-4 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                      </svg>
-                    <span class="text-gray-500"><del>All Hot Drinks 10% discount </del> </span><span><a href="familly.html">Upgrade</a></span>
-                </li>
-                <li class="flex items-center space-x-3">
-                    <!-- Icon -->
-                    <svg class="flex-shrink-0  w-4 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                      </svg>
-                    <span class="text-gray-500"><del>All Hot Drinks 10% discount </del> </span><span><a href="familly.html">Upgrade</a></span>
-                </li>
-                
-                  
-              </ul>
+                    <ul role="list" class="mb-8 space-y-4 text-left">
+                       
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>3  produkte <span class="font-semibold">10% Ulje</span></span>
+                        </li>
+                    </ul>
     </div>
-        <a href="#" class="lg:mt-5  bg-red-700 text-white flex hover:bg-black text-white rounded-br-2xl rounded-tl-2xl items-center p-4 text-gray-900  dark:text-white hover:bg-dark text-white dark:hover:bg-gray-700 group">
+        <a href="personal.html" class="lg:mt-5  bg-red-700 text-white flex hover:bg-black text-white rounded-br-2xl rounded-tl-2xl items-center p-4 text-gray-900  dark:text-white hover:bg-dark text-white dark:hover:bg-gray-700 group">
            <svg class="flex-shrink-0 w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-white dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
               <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
            </svg>
@@ -180,62 +125,15 @@
                   <div class="flex justify-center items-center">
 
                     <ul role="list" class="mb-8 space-y-4 text-left">
+                       
                         <li class="flex items-center space-x-3">
                             <!-- Icon -->
                             <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>3 Hot Drinks 10% discount</span>
+                            <span>6  produkte <span class="font-semibold">10% Ulje</span></span>
                         </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>3 Cold Drinks 10% discount</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>3 Crepper  10% discount</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>6 Hot Drinks 10% discount</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>6 Hot Drinks 10% discount</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>6 Hot Drinks 10% discount</span>
-                        </li>
-                      <li class="flex items-center space-x-3">
-                          <!-- Icon -->
-                          <svg class="flex-shrink-0  w-4 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                            </svg>
-                          <span class="text-gray-500"><del>All Hot Drinks 10% discount </del> </span><span><a href="familly.html">Upgrade</a></span>
-                      </li>
-                      <li class="flex items-center space-x-3">
-                          <!-- Icon -->
-                          <svg class="flex-shrink-0  w-4 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                            </svg>
-                          <span class="text-gray-500"><del>All Hot Drinks 10% discount </del> </span><span><a href="familly.html">Upgrade</a></span>
-                      </li>
-                      <li class="flex items-center space-x-3">
-                          <!-- Icon -->
-                          <svg class="flex-shrink-0  w-4 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                            </svg>
-                          <span class="text-gray-500"><del>All Hot Drinks 10% discount </del> </span><span><a href="familly.html">Upgrade</a></span>
-                      </li>
-                      
-                        
                     </ul>
     </div>
-    <a href="#" class="lg:mt-5  bg-red-700 text-white flex hover:bg-black text-white rounded-br-2xl rounded-tl-2xl items-center p-4 text-gray-900  dark:text-white hover:bg-dark text-white dark:hover:bg-gray-700 group">
+    <a href="familly.html" class="lg:mt-5  bg-red-700 text-white flex hover:bg-black text-white rounded-br-2xl rounded-tl-2xl items-center p-4 text-gray-900  dark:text-white hover:bg-dark text-white dark:hover:bg-gray-700 group">
         <svg class="flex-shrink-0 w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-white dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
            <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
         </svg>
@@ -244,7 +142,7 @@
             </div>
             <!-- Pricing Card -->
             <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-red-100 rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                <h3 class="mb-4 text-2xl font-semibold">Enterprise</h3>
+                <h3 class="mb-4 text-2xl font-semibold">Familly</h3>
                 <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                     Relevant for multiple users, extended & premium support</p>
                 <div class="flex justify-center items-baseline my-8">
@@ -255,34 +153,15 @@
                 <!-- List -->
                   <div class="flex justify-center items-center">
                     <ul role="list" class="mb-8 space-y-4 text-left">
+                       
                         <li class="flex items-center space-x-3">
                             <!-- Icon -->
                             <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>All  Hot Drinks 10% discount</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>All Cold Drinks 10% discount</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>All Crepes 10% discount</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>3 Hot Drinks 10% discount</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            <span>3 Hot Drinks 10% discount</span>
+                            <span>Total  produkte <span class="font-semibold">10% Ulje</span></span>
                         </li>
                     </ul>
     </div>
-    <a href="#" class="lg:mt-5  bg-red-700 text-white flex hover:bg-black text-white rounded-br-2xl rounded-tl-2xl items-center p-4 text-gray-900  dark:text-white hover:bg-dark text-white dark:hover:bg-gray-700 group">
+    <a href="comnpany.html" class="lg:mt-5  bg-red-700 text-white flex hover:bg-black text-white rounded-br-2xl rounded-tl-2xl items-center p-4 text-gray-900  dark:text-white hover:bg-dark text-white dark:hover:bg-gray-700 group">
         <svg class="flex-shrink-0 w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-white dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
            <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
         </svg>
@@ -347,4 +226,4 @@
   
 </body>
 
-</html>
+</html>s
