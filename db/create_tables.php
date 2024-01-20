@@ -27,19 +27,18 @@ if (mysqli_query($conn, $sql_create_table_users)) {
     echo "<br> Error creating table users: <br>" . mysqli_error($conn);
 }
 
-$sql_create_table_product_courses = "CREATE TABLE courses(
+$sql_create_table_product_categories = "CREATE TABLE categories(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(255) NOT NULL,
-    duration VARCHAR(255) NOT NULL
+    name VARCHAR(255) NOT NULL
 )";
 
-if (mysqli_query($conn, $sql_create_table_product_courses)) {
-    echo "<br> Table courses created succesfully";
+if (mysqli_query($conn, $sql_create_table_product_categories)) {
+    echo "<br> Table categories created succesfully";
 } else {
-    echo "<br> Error creating table courses: <br>" . mysqli_error($conn);
+    echo "<br> Error creating table categories: <br>" . mysqli_error($conn);
 }
 
-$sql_create_table_students = "CREATE TABLE students(
+$sql_create_table_clients = "CREATE TABLE clients(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     firstName VARCHAR(255) NOT NULL,
     lastName VARCHAR(255) NOT NULL,
@@ -47,13 +46,13 @@ $sql_create_table_students = "CREATE TABLE students(
     course_id INT NOT NULL,
     fee_paid BOOLEAN NOT NULL, 
     absences INT,
-    FOREIGN KEY (course_id) REFERENCES courses(id)
+    FOREIGN KEY (course_id) REFERENCES categories(id)
     )";
 
-if (mysqli_query($conn, $sql_create_table_students)) {
-    echo "<br> Table students created successfully";
+if (mysqli_query($conn, $sql_create_table_clients)) {
+    echo "<br> Table clients created successfully";
 } else {
-    echo "<br> Error creating table students: <br>" . mysqli_error($conn);
+    echo "<br> Error creating table clients: <br>" . mysqli_error($conn);
 }
 
 mysqli_close($conn);
