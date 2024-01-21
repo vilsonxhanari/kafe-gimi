@@ -197,31 +197,31 @@ if ((!$users) || (!$courses) || (!$students)) {
 
 
 
-    <h3>All Users | <a href="add_user.php">Add New User</a></h3>
+    <h3  class="lg:mx-2 py-4">All Users | <a  class="bg-red-700 text-white px-2 py-2 rounded-tl-xl rounded-br-xl" href="add_user.php">Add New User</a></h3>
     <!-- Display user data in a table -->
-    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+    <table class="w-full text-sm text-center rtl:text-center text-gray-500 dark:text-gray-400 py-5 ">
         <thead>
-            <tr class="table-auto">
-                <th>User ID</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-                <th>Role</th>
-                <th>Edit</th>
-                <th>Delete</th>
+            <tr class="table-auto my-4 ">
+                <th class=" py-5">User ID</th>
+                <th class=" py-5">First Name</th>
+                <th class=" py-5">Last Name</th>
+                <th class=" py-5">Email</th>
+                <th class=" py-5">Role</th>
+                <th class=" py-5">Edit</th>
+                <th class=" py-5">Delete</th>
                 <!-- Add more columns if needed -->
             </tr>
         </thead>
-        <tbody >
+          <tbody class="bg-gray-200 text-black py-5">
             <?php while ($row = mysqli_fetch_assoc($users)): ?>
-                <tr>
-                    <td><?php echo $row['id']; ?></td>
-                    <td><?php echo $row['firstName']; ?></td>
-                    <td><?php echo $row['lastName']; ?></td>
-                    <td><?php echo $row['email']; ?></td>
-                    <td><?php echo $row['role']; ?></td>
-                    <td class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded"><a href="edit_user.php?id=<?php echo $row['id']; ?>">Edit</a></td>
-                    <td class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a href="delete_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this user?')">Delete</a></td>
+                <tr class="py-5">
+                    <td class=" py-5"><?php echo $row['id']; ?></td>
+                    <td class=" py-5"><?php echo $row['firstName']; ?></td>
+                    <td class=" py-5"><?php echo $row['lastName']; ?></td>
+                    <td class=" py-5"><?php echo $row['email']; ?></td>
+                    <td class=" py-5"><?php echo $row['role']; ?></td>
+                    <td class=" py-5"><a href="edit_user.php?id=<?php echo $row['id']; ?>"  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Edit</a></td>
+                    <td class=" py-5"><a href="delete_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this user?')"  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Delete</a></td>
                     <!-- Add more columns if needed -->
                 </tr>
             <?php endwhile; ?>
@@ -230,26 +230,26 @@ if ((!$users) || (!$courses) || (!$students)) {
 
     <!-- *******************************courses************************************ -->
 
-    <h3>All Courses | <a href="add_courses.php">Add New Course</a></h3>
+    <h3 class="lg:mx-2 py-4">All Courses | <a  class="bg-red-700 text-white px-2 py-2 rounded-tl-xl rounded-br-xl"  href="add_courses.php">Add New Course</a></h3>
     <!-- Display Course data in a table -->
-    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+    <table class="w-full text-sm text-center rtl:text-right text-gray-500 dark:text-gray-400">
         <thead>
-            <tr>
-                <th>Course ID</th>
-                <th>Name</th>
-                <th>Duration</th>
-                <th>Edit</th>
-                <th>Delete</th>
+            <tr class="table-auto border-red-700">
+                <th class=" py-5 border-gray-700">Course ID</th>
+                <th class=" py-5">Name</th>
+                <th class=" py-5">Duration</th>
+                <th class=" py-5">Edit</th>
+                <th class=" py-5">Delete</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="bg-gray-200 text-black py-5 mx-4">
             <?php while ($row = mysqli_fetch_assoc($courses)): ?>
                 <tr>
-                    <td><?php echo $row['id']; ?></td>
-                    <td><?php echo $row['name']; ?></td>
-                    <td><?php echo $row['duration']; ?></td>
-                    <td><a href="edit_courses.php?id=<?php echo $row['id']; ?>">Edit</a></td>
-                    <td><a href="delete_course.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this user?')">Delete</a></td>
+                    <td class=" py-5"><?php echo $row['id']; ?></td>
+                    <td class=" py-5"><?php echo $row['name']; ?></td>
+                    <td class=" py-5"><?php echo $row['duration']; ?></td>
+                    <td class=" py-5"><a  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="edit_courses.php?id=<?php echo $row['id']; ?>">Edit</a></td>
+                    <td class=" py-5"><a  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="delete_course.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this user?')">Delete</a></td>
                 </tr>
             <?php endwhile; ?>
         </tbody>
@@ -262,29 +262,28 @@ if ((!$users) || (!$courses) || (!$students)) {
     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead>
             <tr class="">
-                <th>Student ID</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-                <th>Course</th>
-                <th>Fee paid</th>
-                <th>Absences</th>
-                <th>Edit</th>
-                <th>Delete</th>
+                <th class=" py-5">Student ID</th>
+                <th class=" py-5">First Name</th>
+                <th class=" py-5">Last Name</th>
+                <th class=" py-5">Email</th>
+                <th class=" py-5">Course</th>
+                <th class=" py-5">Fee paid</th>
+                <th class=" py-5">Absences</th>
+                <th class=" py-5">Delete</th>
             </tr>
         </thead>
         <tbody>
             <?php while ($row = mysqli_fetch_assoc($students)): ?>
                 <tr>
-                    <td><?php echo $row['id']; ?></td>
-                    <td><?php echo $row['firstName']; ?></td>
-                    <td><?php echo $row['lastName']; ?></td>
-                    <td><?php echo $row['email']; ?></td>
-                    <td><?php echo $row['course_id']; ?></td>
-                    <td><?php echo ($row['fee_paid'] == 1) ? 'true': 'false'; ?></td>
-                    <td><?php echo $row['absences']; ?></td>
-                    <td><a href="edit_course.php?id=<?php echo $row['id']; ?>">Edit</a></td>
-                    <td><a href="delete_course.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this user?')">Delete</a></td>
+                    <td class=" py-5"><?php echo $row['id']; ?></td>
+                    <td class=" py-5"><?php echo $row['firstName']; ?></td>
+                    <td class=" py-5"><?php echo $row['lastName']; ?></td>
+                    <td class=" py-5"><?php echo $row['email']; ?></td>
+                    <td class=" py-5"><?php echo $row['course_id']; ?></td>
+                    <td class=" py-5"><?php echo ($row['fee_paid'] == 1) ? 'true': 'false'; ?></td>
+                    <td class=" py-5"><?php echo $row['absences']; ?></td>
+                    <td class=" py-5"><a href="edit_course.php?id=<?php echo $row['id']; ?>">Edit</a></td>
+                    <td class=" py-5"><a href="delete_course.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this user?')">Delete</a></td>
                 </tr>
             <?php endwhile; ?>
         </tbody>
