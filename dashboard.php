@@ -40,21 +40,18 @@ if ((!$users) || (!$courses) || (!$students)) {
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="js.js"></script>
-    <title>K-Vip</title>
+    <title>Dashboard</title>
 </head>
-
 <body>
 
-
+	
     <nav class="fixed top-0 z-50 w-full bg-red-700 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
         <div class="px-3 py-3 lg:px-5 lg:pl-3">
           <div class="flex items-center justify-between">
@@ -99,8 +96,8 @@ if ((!$users) || (!$courses) || (!$students)) {
                         <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Earnings</a>
                       </li>
                       <li>
-                        <a href="logout.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Sign out</a>
-                      </li>
+                        <a href="logout.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Sign out</a>               
+				   </li>
                     </ul>
                   </div>
                 </div>
@@ -192,234 +189,113 @@ if ((!$users) || (!$courses) || (!$students)) {
          </div>
       </aside>
       
-      <div class="lg:p-4 sm:ml-64  bg-red-500">
-         <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+      <div class="lg:p-4 sm:ml-64">
+         <div class="p- mt-14">
             <!---Product hot--->
 
-            <div class="lg:md:grid grid-cols-3 mb-4 ">
-               <div class="flex justify-center items-center">
+     <h2 class="bg-red-700 px-6 py-6 rounded-tl-2xl rounded-br-2xl  font-bold text-lg text-white bg-red-300"> <span class="lg:bg-transparent" style="font-size0em; font-weight:light;">Welcome to Dashboard</span>,  <?php echo $_SESSION['firstName'] . ' ' . $_SESSION['lastName']; ?> </h2>
 
-                  <div class="max-w-screen-2xl max-w-100 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                      <a href="#">
-                          <img class="rounded-t-lg" src="img/coffe2.jpg" alt="" />
-                      </a>
-                      <div class="p-5">
-                          <a href="#">
-                              <p class="lg:rounded-br-2xl rounded-tl-2xl bg-red-700 text-white px-2 py-3">Hot Drinks <span>10% discount</span></p>
-                              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <span class="bg-red-900 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-dark">45 Lek</span>Turkish Coffe</h5>
-                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <span class="bg-red-900 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-dark">63 Lek</span>Express Coffe</h5>
-                                 <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                  <span class="bg-red-900 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-dark">63 Lek</span>Machiatto</h5>
-                                 <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                 <span class="bg-red-900 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-dark">90 Lek</span>American  Coffe</h5>
-                              </a>
 
-                      </div>
-                  </div>
-                  </div>
-               <!---Product hot--->
-               <div class="flex justify-center items-center">
 
-                  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                      <a href="#">
-                          <img class="rounded-t-lg" src="img/coffe2.jpg" alt="" />
-                      </a>
-                      <div class="p-5">
-                            <a href="#">
-                                 <p class="lg:rounded-br-2xl rounded-tl-2xl bg-red-700 text-white px-2 py-3">Cold Drinks <span>10% discount</span></p>
-                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                  <span class="bg-red-900 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-dark">126 Lek</span>Affogato</h5>
-                                  <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                     <span class="bg-red-900 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-dark">135 Lek</span>Freddo Espresso</h5>
-                                   <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                     <span class="bg-red-900 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-dark">135 Lek</span>Freddo  Cappuccino</h5>
-                                   <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                     <span class="bg-red-900 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-dark">135 Lek</span>Frappe Coffee</h5>
-                                </a>
-                      </div>
-                  </div>
-                  </div>
-               
-                  <div class="flex justify-center items-center">
+    <h3>All Users | <a href="add_user.php">Add New User</a></h3>
+    <!-- Display user data in a table -->
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead>
+            <tr class="table-auto">
+                <th>User ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Edit</th>
+                <th>Delete</th>
+                <!-- Add more columns if needed -->
+            </tr>
+        </thead>
+        <tbody >
+            <?php while ($row = mysqli_fetch_assoc($users)): ?>
+                <tr>
+                    <td><?php echo $row['id']; ?></td>
+                    <td><?php echo $row['firstName']; ?></td>
+                    <td><?php echo $row['lastName']; ?></td>
+                    <td><?php echo $row['email']; ?></td>
+                    <td><?php echo $row['role']; ?></td>
+                    <td class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded"><a href="edit_user.php?id=<?php echo $row['id']; ?>">Edit</a></td>
+                    <td class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a href="delete_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this user?')">Delete</a></td>
+                    <!-- Add more columns if needed -->
+                </tr>
+            <?php endwhile; ?>
+        </tbody>
+    </table>
 
-                     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                         <a href="#">
-                             <img class="rounded-t-lg" src="img/coffe2.jpg" alt="" />
-                         </a>
-                         <div class="p-5">
-                          <a href="#">
-                               <p class="lg:rounded-br-2xl rounded-tl-2xl bg-red-700 text-white px-2 py-3">Cold Drinks <span>10% discount</span></p>
-                              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                  <span class="bg-red-900 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-dark">126 Lek</span>Affogato</h5>
-                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                 <span class="bg-red-900 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-dark">135 Lek</span>Freddo Espresso</h5>
-                                 <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                   <span class="bg-red-900 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-dark">135 Lek</span>Freddo  Cappuccino</h5>
-                                 <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                           <span class="bg-red-900 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-dark">135 Lek</span>Frappe Coffee</h5>
-                              </a>
-                         </div>
-                     </div>
-                     </div>
-            </div>
- 
+    <!-- *******************************courses************************************ -->
+
+    <h3>All Courses | <a href="add_courses.php">Add New Course</a></h3>
+    <!-- Display Course data in a table -->
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead>
+            <tr>
+                <th>Course ID</th>
+                <th>Name</th>
+                <th>Duration</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php while ($row = mysqli_fetch_assoc($courses)): ?>
+                <tr>
+                    <td><?php echo $row['id']; ?></td>
+                    <td><?php echo $row['name']; ?></td>
+                    <td><?php echo $row['duration']; ?></td>
+                    <td><a href="edit_courses.php?id=<?php echo $row['id']; ?>">Edit</a></td>
+                    <td><a href="delete_course.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this user?')">Delete</a></td>
+                </tr>
+            <?php endwhile; ?>
+        </tbody>
+    </table>
+
+     <!-- *******************************students************************************ -->
+
+     <h3>All Students | <a href="add_user.php">Add New Student</a></h3>
+    <!-- Display Student data in a table -->
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead>
+            <tr class="">
+                <th>Student ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>Fee paid</th>
+                <th>Absences</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php while ($row = mysqli_fetch_assoc($students)): ?>
+                <tr>
+                    <td><?php echo $row['id']; ?></td>
+                    <td><?php echo $row['firstName']; ?></td>
+                    <td><?php echo $row['lastName']; ?></td>
+                    <td><?php echo $row['email']; ?></td>
+                    <td><?php echo $row['course_id']; ?></td>
+                    <td><?php echo ($row['fee_paid'] == 1) ? 'true': 'false'; ?></td>
+                    <td><?php echo $row['absences']; ?></td>
+                    <td><a href="edit_course.php?id=<?php echo $row['id']; ?>">Edit</a></td>
+                    <td><a href="delete_course.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this user?')">Delete</a></td>
+                </tr>
+            <?php endwhile; ?>
+        </tbody>
+    </table>
          </div>
-         <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
-            <!---Product hot--->
-            <div class="lg:md:grid grid-cols-3 mb-4 ">
-               <div class="flex justify-center items-center">
 
-                  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                      <a href="#">
-                          <img class="rounded-t-lg" src="img/coffe2.jpg" alt="" />
-                      </a>
-                      <div class="p-5">
-                        <a href="#">
-                          <p class="lg:rounded-br-2xl rounded-tl-2xl bg-red-700 text-white px-2 py-3">Hot Drinks <span>10% discount</span></p>
-                            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                              <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">120 Lek</span> Decaffeinate</h5>
-                              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                 <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">150 Lek</span> Cappuccino</h5>
-                               <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                 <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">150 Lek</span> Coffee Latte</h5>
-                               <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                 <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">140 Lek</span> Nescafe</h5>
-                            </a>
-                      </div>
-                  </div>
-                  </div>
-               <!---Product hot--->
-               <div class="flex justify-center items-center">
-
-                  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                      <a href="#">
-                          <img class="rounded-t-lg" src="img/coffe2.jpg" alt="" />
-                      </a>
-                      <div class="p-5">
-                        <a href="#">
-                          <p class="lg:rounded-br-2xl rounded-tl-2xl bg-red-700 text-white px-2 py-3">Cold Drinks <span> 10% discount</span></p>
-                            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                              <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">120 Lek</span> Decaffeinate</h5>
-                              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">150 Lek</span> Cappuccino</h5>
-                               <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">150 Lek</span> Coffee Latte</h5>
-                               <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">140 Lek</span> Nescafe</h5>
-                            </a>
-                      </div>
-                  </div>
-                  </div>
-               
-                  <div class="flex justify-center items-center">
-
-                     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                         <a href="#">
-                             <img class="rounded-t-lg" src="img/coffe2.jpg" alt="" />
-                         </a>
-                         <div class="p-5">
-                          <a href="#">
-                            <p class="lg:rounded-br-2xl rounded-tl-2xl bg-red-700 text-white px-2 py-3">Crepperi <span> 10% discount</span></p>
-                              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">120 Lek</span> Decaffeinate</h5>
-                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                  <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">150 Lek</span> Cappuccino</h5>
-                                 <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                  <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">150 Lek</span> Coffee Latte</h5>
-                                 <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                  <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">140 Lek</span> Nescafe</h5>
-                              </a>
-                        </div>
-                     </div>
-                     </div>
-            </div>
-            <!---Product hot--->
-
-
-
-         </div>
-         <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
-            <!---Product hot--->
-
-           <div class="lg:md:grid grid-cols-3 mb-4 ">
-               <div class="flex justify-center items-center">
-
-                  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                      <a href="#">
-                          <img class="rounded-t-lg" src="img/coffe2.jpg" alt="" />
-                      </a>
-                      <div class="p-5">
-                        <a href="#">
-                          <p class="lg:rounded-br-2xl rounded-tl-2xl bg-red-700 text-white px-2 py-3">Hot Drinks <span>10% discount</p>
-                            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                              <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">120 Lek</span> Decaffeinate</h5>
-                              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">150 Lek</span> Cappuccino</h5>
-                               <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">150 Lek</span> Coffee Latte</h5>
-                               <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">140 Lek</span> Nescafe</h5>
-                            </a>
-
-                      </div>
-                  </div>
-                  </div>
-               <!---Product hot--->
-               <div class="flex justify-center items-center">
-
-                  <div class="lg:max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                      <a href="#">
-                          <img class="rounded-t-lg" src="img/coffe2.jpg" alt="" />
-                      </a>
-                      <div class="p-5">
-                        <a href="#">
-                          <p class="lg:rounded-br-2xl rounded-tl-2xl bg-red-700 text-white px-2 py-3">Cold Drinks <span>10% discount</p>
-                            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                              <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">120 Lek</span> Decaffeinate</h5>
-                              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">150 Lek</span> Cappuccino</h5>
-                               <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">150 Lek</span> Coffee Latte</h5>
-                               <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">140 Lek</span> Nescafe</h5>
-                            </a>
-                      </div>
-                  </div>
-                  </div>
-               
-                  <div class="flex justify-center items-center">
-
-                     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                         <a href="#">
-                             <img class="rounded-t-lg" src="img/coffe2.jpg" alt="" />
-                         </a>
-                         <div class="p-5">
-                          <a href="#">
-                            <p class="lg:rounded-br-2xl rounded-tl-2xl bg-red-700 text-white px-2 py-3">Crepperi <span>10% discount</p>
-                              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">120 Lek</span> Decaffeinate</h5>
-                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                  <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">150 Lek</span> Cappuccino</h5>
-                                 <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                  <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">150 Lek</span> Coffee Latte</h5>
-                                 <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                  <span class="bg-red-700 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded text-white">140 Lek</span> Nescafe</h5>
-                              </a>
-                        </div>
-                     </div>
-                     </div>
-                     
-            </div>
-
-         </div>
       </div>    
 </body>
-
 </html>
+
 <?php
 // Close the database connection
 mysqli_close($conn);
 ?>
-
